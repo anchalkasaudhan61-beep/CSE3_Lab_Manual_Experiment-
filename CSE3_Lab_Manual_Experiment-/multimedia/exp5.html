@@ -1,0 +1,61 @@
+EXPERIMENTS/
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <form action="./submit.html">
+        <label for="name">Ful Name:</label>
+        <input type="text" id="name" name="name" minlength="4" maxlength="15" placeholder=" Enter your full name" required>
+        <br><br>
+         <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter valid email address" required>
+        <br><br>
+
+                <label for="password">Password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="Enter password" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender" value="male" required>
+       <label for="male">Male</label>
+        <input type="radio" id="gender" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="gender" name="gender" value="female" required>
+        <lable for="other">Other</lable>
+        <input type="radio" id="gender" name="gender" value="other" required> 
+         <br><br>
+
+         <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select a course--</option>
+            <option>B.Tech CSE</option>
+            <option>B.Tech IT</option>
+            <option>B.Tech ECE</option>
+        </select>
+        <br><br>
+
+        <!-- Phone Number -->
+<label for="Contact">Contact Number:</label>
+<input type="tel" id="phone" name="phone"
+       placeholder="Enter your phone number"
+       pattern="[0-9]{10}"
+       maxlength="10"
+       required>
+<br><br>
+
+<!-- Address -->
+<lable for="address"> Address:</lable><br>
+<textarea id="address" rows="4" cols="40" placeholder="Enter your address"></textarea>
+<br><br>
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+        
+    </form>
+</body>
+</html>
